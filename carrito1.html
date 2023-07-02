@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cerámicas Mür - Carrito de compras</title>
+  <title>Cerámica Mür - Carrito de compras</title>
   <script src="https://unpkg.com/vue@next"></script>
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
@@ -29,7 +29,7 @@
         <tr v-for="producto in productos" :key="producto.codigo">
           <td>{{ producto.codigo }}</td>
           <td>{{ producto.descripcion }}</td>
-          <td align="right">{{ producto.cantidad }}</td>
+          <td align="center">{{ producto.cantidad }}</td>
           <td align="right">&nbsp; &nbsp; {{ producto.precio }}</td>
           <td>
             <button @click="agregarAlCarrito(producto)">&nbsp;&nbsp;<b>+</b>&nbsp;&nbsp;</button>
